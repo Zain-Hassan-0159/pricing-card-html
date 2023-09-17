@@ -9,12 +9,65 @@
     <link rel="stylesheet" href="assets/css/index.css">
 
 
-    <title>Hello, world!</title>
+    <title>Pricing Card</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <div class="container access-offer-ruler ">
+      <!-- pricing card -->
+      <div 
+        class="offer-card" 
+        data-slider-id="1"
+        data-min="0" 
+        data-max="100"
+      >
+          <div class="offer-card-inner">
+              <div class="heading">
+                <h3 class="offer-name">Starter</h3>
+                <span class="offer-cartridge">1 mois d’essai gratuit</span>
+              </div>
+
+              <!-- Range Slider -->
+              <div class="range"  
+              >
+                  <input name="range" type="range" min="1" max="250" value="10" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+                  <div class="rangeslider rangeslider--horizontal" id="js-rangeslider-0">
+                    <div class="rangeslider__fill" ></div>
+                    <div class="rangeslider__handle" >
+                      <output id="js-output">
+                        <strong>10</strong> destinataires
+                      </output>
+                    </div>
+                  </div>
+                  
+                  <span class="recipients-data">1</span>
+                  <span class="recipients-data max">250</span>
+              </div>
+              <!-- / Range Slider -->
+
+              <div class="offer-quick-infos">
+                  <div class="offer-price ">14€90</div>
+                  <div class="offer-price-text">
+                      HT / mois sans engagement
+                      <div class="txt-blue">pour <span class="offer-recipients">10 destinataires</span></div>
+                  </div>
+              </div>
+
+              
+              <ul class="offer-details list-unstyled text-small pt-3 mb-4">                                                                    
+                <li>Envoi illimité de documents à valeur probante</li>
+                <li>Coffres-forts Digiposte gratuits pour vos destinataires</li>
+                <li>Jusqu’à 2 utilisateurs</li>
+                <li>Rapports en temps réel</li>
+                <li>Aide en ligne et support client par e-mail</li> 
+              </ul>
+              <button class="offer_cta" type="button" data-initial-label="Sélectionner" >Inscrivez-vous</button>
+          </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 
   </body>
